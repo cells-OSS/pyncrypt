@@ -8,4 +8,5 @@ USE AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DATA LOSS, THERE IS A DECRYPT
 COMING SOON!
 
 This script has been inspired by NetworkChuck: https://www.youtube.com/watch?v=UtMMjXOlRQc
+
 Credits to him, this script at core has the code from NetworkChuck. It's just a fun project I wanted to try, he on his video made a "ransomware", but i decided to take the code and change it from being a ransomware to being an encryption script.
