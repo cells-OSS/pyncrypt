@@ -5,7 +5,7 @@ This script will encrypt the files that you choose, the testing so far shows tha
 
 USE AT YOUR OWN RISK, I AM NOT RESPONSIBLE FOR ANY DATA LOSS, THERE IS A DECRYPTOR SCRIPT ON A DIFFERENT REPOSITORY, WHICH CAN BE FOUND HERE:
 
-COMING SOON!
+https://github.com/cells-OSS/pydcrypt
 
 This script has been inspired by NetworkChuck: https://www.youtube.com/watch?v=UtMMjXOlRQc
 
