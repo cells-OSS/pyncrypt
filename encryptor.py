@@ -1,20 +1,20 @@
 import os
 from cryptography.fernet import Fernet
 
-files = []
+file_input = input("File(s) to encrypt: ")
 
-for file in os.listdir():
-    fileName = input("Which file do you want to encrypt?: ")
+files = [f.strip() for f in file_input.split(',') if f.strip()]
 
-    files.append(fileName)
-    break
-    
+for file in files:
+    if not os.path.isfile(file):
+        print(f"File(s) not found: {file}")
+        exit()
+
 print(files)
 
-confirmationMessage = input("Are you sure you want to encrypt this file(y/N)?: ")
+confirmationMessage = input("The file(s) shown above will be encrypted, are you sure(y/N)?: ")
 
-if confirmationMessage == "Y" or "y":
-    
+if confirmationMessage.lower() == "y":
     key = Fernet.generate_key()
 
     with open("decryption_key.txt", "wb") as decryption_key:
@@ -26,3 +26,7 @@ if confirmationMessage == "Y" or "y":
         contents_encrypted = Fernet(key).encrypt(contents)
         with open(file, "wb") as thefile:
             thefile.write(contents_encrypted)
+
+    print("File(s) encrypted successfully!")
+else:
+    print("Encryption canceled.")
