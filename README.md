@@ -3,6 +3,11 @@ A simple file encryption script made with Python.
 
 This script will encrypt the files that you choose, the testing so far shows that it works with text files.
 
+# IMPORTANT NOTICE!
+
+this project has been archived and will no longer receive any updates. pyncrypt and pydcrypt have merged into a single script that will keep on receiving updates which can be found here: https://github.com/cells-OSS/pyndcrypt
+
+
 # USE AT YOUR OWN RISK
  
 I AM NOT RESPONSIBLE FOR ANY DATA LOSS, THERE IS A DECRYPTOR SCRIPT ON A DIFFERENT REPOSITORY, WHICH CAN BE FOUND HERE:
