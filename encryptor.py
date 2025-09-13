@@ -1,14 +1,15 @@
 import os
+import sys
 from cryptography.fernet import Fernet
 
-file_input = input("File(s) to encrypt: ")
+file_input = input("Which file(s) do you want to encrypt: ")
 
 files = [f.strip() for f in file_input.split(',') if f.strip()]
 
 for file in files:
     if not os.path.isfile(file):
         print(f"File(s) not found: {file}")
-        exit()
+        os.execl(sys.executable, sys.executable, *sys.argv)
 
 print(files)
 
